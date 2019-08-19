@@ -1,4 +1,15 @@
-# Day 1: Tạo tài khoản và cài đặt Chatwork
+# Git: Tạo tài khoản và cài đặt Chatwork
 - Add: anh Phạm Văn Chiến (front-end-trainer)
 - Học Markdown
 - Học git
+- git init : khởi tạo git
+- git status: kiểm tra trạng thái
+- git add: đưa file từ working directory lên staged area (INDEX)
+- git commit -m 'message': đưa file từ staged area lên repository (HEAD)
+- HEAD là nơi commit đang làm việc
+- git checkout -b <branchname>: tạo và truy cập đến branch mới
+- git checkout <branchname>: truy cập đến branch
+- git remote add <repo>: đăng kí repo từ xa
+- git clone <repository>: clone repository
+- git push origin master: đẩy file lên repository
+- git pull: kéo file về
