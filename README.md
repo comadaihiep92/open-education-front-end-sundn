@@ -44,7 +44,7 @@
     - PUG làm sạch cấu trúc HTML (Giống SASS cho CSS) -- (tiền xử lý)
     - PUG làm việc với thụt đầu dòng hoặc khoảng trắng
         - vd:
-               ```js
+               ```css
                doctype html
                html(lange='en')
                     head
