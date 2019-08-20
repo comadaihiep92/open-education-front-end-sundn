@@ -19,6 +19,7 @@
     - BEM: là quy ước đặt tên class cho HTML và CSS
     viết tắt của: Block, Element, Modifier
     - Syntax:
+    
     .block {}  // block là phần to nhất của component
     .block__element {} // element là con bên trong của block
     .block--modifier {} // modifier phiên bản # của block. Hay những style thay đổi khác ban đầu
@@ -29,6 +30,7 @@
     https://viblo.asia/p/tim-hieu-ve-bem-css-hieu-qua-voi-sass-mixin-jvlKaqWkKVr
     - Dùng với SASS
     - Syntax:
+
         .block {
             ...
             &__element {}
