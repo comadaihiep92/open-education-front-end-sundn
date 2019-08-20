@@ -35,13 +35,16 @@
 
         .block {
             ...
+
             &__element {}
 
             &--modifier {}
-            
+
         }
         .block {}
+
         .block__element {}
+        
         .block--modifier {}
     
 - Tìm hiểu PUG:
