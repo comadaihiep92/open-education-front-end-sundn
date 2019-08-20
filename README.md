@@ -32,9 +32,7 @@
         .block {
             ...
             &__element {}
-
             &--modifier {}
-
         }
         .block {}
         .block__element {}
