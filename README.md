@@ -1,7 +1,7 @@
-# Git: Tạo tài khoản và cài đặt Chatwork
+1. Git: Tạo tài khoản và cài đặt Chatwork
 - Add: anh Phạm Văn Chiến (front-end-trainer)
-- Học Markdown
-- Học git
+- Học Markdown: https://guides.github.com/features/mastering-markdown/
+- Học git: 
 - git init : khởi tạo git
 - git status: kiểm tra trạng thái
 - git add: đưa file từ working directory lên staged area (INDEX)
@@ -13,18 +13,15 @@
 - git clone <repository>: clone repository
 - git push origin master: đẩy file lên repository
 - git pull: kéo file về
-# HTML/CSS
+2. HTML/CSS
 - Tìm hiểu BEM:
     https://viblo.asia/p/tim-hieu-ve-bem-trong-15-phut-924lJOk65PM
     - BEM: là quy ước đặt tên class cho HTML và CSS
     viết tắt của: Block, Element, Modifier
     - Syntax:
-
-    .block {}  // block là phần to nhất của component
-
-    .block__element {} // element là con bên trong của block
-
-    .block--modifier {} // modifier phiên bản # của block. Hay những style thay đổi khác ban đầu
+    >.block {}  // block là phần to nhất của component
+    >.block__element {} // element là con bên trong của block
+    >.block--modifier {} // modifier phiên bản # của block. Hay những style thay đổi khác ban đầu
     - Vì sao dùng BEM: là giải pháp giúp đặt tên class dễ dàng
         giúp viết code đơn giản, dễ hiểu hơn, dễ sửa chữa.
 
@@ -32,20 +29,15 @@
     https://viblo.asia/p/tim-hieu-ve-bem-css-hieu-qua-voi-sass-mixin-jvlKaqWkKVr
     - Dùng với SASS
     - Syntax:
+        >.block {
+        >    ...
+        >    &__element {}
+        >    &--modifier {}
+        >}
 
-        .block {
-            ...
-
-            &__element {}
-
-            &--modifier {}
-
-        }
-        .block {}
-
-        .block__element {}
-        
-        .block--modifier {}
+        >.block {}
+        >.block__element {}
+        >.block--modifier {}
     
 - Tìm hiểu PUG:
     https://viblo.asia/p/gioi-thieu-ve-pug-template-engine-07LKXzDDlV4
