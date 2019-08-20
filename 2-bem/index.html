@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Learn BEM</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    </head>
+    <style>
+        /* style .block */
+        .btn { 
+            background: gray;
+            border: 0;
+            border-radius: 3px;
+            box-shadow: none;
+            padding: 5px 20px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        /* style .btn--green */
+        .btn--green {
+            background: green;
+        }
+
+        /* style element */
+
+        .info {
+            background: #f2f4f7;
+            margin-top: 23px;
+            padding-bottom: 30px;
+        }
+        .info__description {
+            font-size: 15px;
+            font-family: "Kozuka Gothic Pr6N", sans-serif;
+         }
+        .info__title {
+            font-size: 20px;
+            font-family: "Kozuka Gothic Pr6N", sans-serif;
+            font-weight: bold;
+        }
+
+    </style>
+    <body>
+        <!-- vd: modifier -->
+        <a class="btn btn--green" href="#"></a> <!-- btn là block - btn--green là modifier -->
+        <!-- vd: element -->
+        <div class="info">
+            <div class="info__title">
+                <p>Hello</p>
+                <!-- ở đây info__title và info__description là thành phần con bên trong info -->         
+            </div>
+            <div class="info__description">
+                <p>hi</p>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+
+<!--
+    Tìm hiểu BEM:
+    https://viblo.asia/p/tim-hieu-ve-bem-trong-15-phut-924lJOk65PM
+    - BEM: là quy ước đặt tên class cho HTML và CSS
+    viết tắt của: Block, Element, Modifier
+    - Syntax:
+    .block {}  // block là phần to nhất của component
+    .block__element {} // element là con bên trong của block
+    .block--modifier {} // modifier phiên bản # của block. Hay những style thay đổi khác ban đầu
+    - Vì sao dùng BEM: là giải pháp giúp đặt tên class dễ dàng
+        giúp viết code đơn giản, dễ hiểu hơn, dễ sửa chữa.
+
+    BEM kết hợp với SASS:
+    https://viblo.asia/p/tim-hieu-ve-bem-css-hieu-qua-voi-sass-mixin-jvlKaqWkKVr
+    - Dùng với SASS
+    - Syntax:
+        .block {
+            ...
+            &__element {}
+
+            &--modifier {}
+
+        }
+        .block {}
+        .block__element {}
+        .block--modifier {}
+    
+    Tìm hiểu PUG:
+    https://viblo.asia/p/gioi-thieu-ve-pug-template-engine-07LKXzDDlV4
+    - PUG làm sạch cấu trúc HTML (Giống SASS cho CSS) -- (tiền xử lý)
+    - PUG làm việc với thụt đầu dòng hoặc khoảng trắng
+    vd:
+        doctype html
+        html(lange='en')
+            head
+                title Pug
+            body
+                h1 Pug Examples
+                div.container
+                    p Cool Pug example!
+    - Sạch và dễ đọc hơn, không có thẻ đóng, quét tệp nhanh hơn.
+    Cài đặt:
+        npm install pug -g
+        tạo file có đuôi .pug -- index.pug
+    -> pug index.pug -> chạy file sẽ tạo index.html
+    
+    - Cài đặt pug với gulp: đóng gói Pug với hệ thông xây dựng Gulp
+        npm install --save gulp-install -> tạo thư mục chính gốc thêm tệp package.jsson
+
+    Tìm hiểu SASS:
+    Cài đặt:
+        npm install -g sass
+-->
