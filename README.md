@@ -28,29 +28,32 @@
     https://viblo.asia/p/tim-hieu-ve-bem-css-hieu-qua-voi-sass-mixin-jvlKaqWkKVr
     - Dùng với SASS
     - Syntax:
-        >   - .block {
-        >   - ...
-        >   - &__element {}
-        >   - &--modifier {}
-        >   - }
-
-        >   - .block {}
-        >   - .block__element {}
-        >   - .block--modifier {}
+        ```css
+         .block {
+         ...
+         &__element {}
+         &--modifier {}
+         }
+        .block {}
+        .block__element {}
+        .block--modifier {}
+        ```
     
 - Tìm hiểu PUG:
     https://viblo.asia/p/gioi-thieu-ve-pug-template-engine-07LKXzDDlV4
     - PUG làm sạch cấu trúc HTML (Giống SASS cho CSS) -- (tiền xử lý)
     - PUG làm việc với thụt đầu dòng hoặc khoảng trắng
         - vd:
-        -       doctype html
-        -       html(lange='en')
-        -            head
-        -               title Pug
-        -            body
-        -               h1 Pug Examples
-        -               div.container
-        -                   p Cool Pug example!
+               ```html
+               doctype html
+               html(lange='en')
+                    head
+                       title Pug
+                    body
+                       h1 Pug Examples
+                       div.container
+                           p Cool Pug example!
+                ```
     - Sạch và dễ đọc hơn, không có thẻ đóng, quét tệp nhanh hơn.
     - Cài đặt:
         - npm install pug -g
