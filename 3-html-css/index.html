@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Learn HTML/CSS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <p>1. Đây là một con mèo</p>
+        <p>2. Con mèo <strong>rất</strong> gắt</p>
+        3.<img src="#" alt="test img">
+        <h1>6. Đây là heading 1</h1>
+        <h2>6. Đây là heading 2</h2>
+        <h3>6. Đây là heading 3</h3>
+        <h4>6. Đây là heading 4</h4>
+        <h5>6. Đây là heading 5</h5>
+        <h6>6. Đây là heading 6</h6>
+        <p>7. Đoạn văn</p>
+        <p>8. ul - menu</p>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>pics</li>
+            <li>info</li>
+        </ul>
+        <a href="http://abc.com">abc</a>s
+        <!-- Learn CSS Display -->
+        <div id="main">
+            <div class="displayBlock">
+                <p>display: inline</p>
+            </div>
+            <p>tôi đẹp <span  class="displayInline">trai</span> nè má</p>
+        </div>
+        <div class="simple">
+            <p>I'm smaller</p>
+        </div>
+        <div class="fancy">
+            <p>I'm bigger!</p>
+        </div>
+        <div class="static">
+            <p>là giá trị mặc định, không dùng để định vị.</p>
+            <div class="absolute">
+                <p>nếu dùng static để định vị cho absolute, thì nó sẽ lấy body để định vị</p>
+            </div>
+        </div>
+        <div class="relative1">
+            <p>relative cũng giống static nếu không thêm thuộc tính: top, left, bottom, right</p>
+            <div class="relative2">
+                <span>thêm thuộc tính top, left, bottom, right</span>
+                <p>test</p>
+            </div>
+        </div>
+        <div class="fixed">
+            <p>luôn ở một vị trí cố định khi cuộn trang</p>
+        </div>
+        <div class="relative3">
+            <p>cho relative, bottom = 0px;</p>
+        </div>
+        <div class="main2">
+            <p>cho main 2 ở đây test absolute</p>
+        </div>
+        <div class="absolute2">
+            <p>cho absolute, bottom = 0px;</p>
+        </div>
+        <div class="relative4">
+            <p>dùng làm định vị tổ tiên cho absolute</p>
+            <div class="absolute3">
+                <p>được định vị bởi relative4</p>
+            </div>
+        </div>
+        <div class="float">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived <img src="img.png" alt="img">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="box">
+            <p>Tôi cảm thấy như mình đang nổi</p>
+        </div>
+        <div class="after-box">
+            <p>sử dụng <strong>clear</strong> để xóa phần nổi đi</p>
+        </div>
+        <div class="clearfix">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <img src="img.png" alt="img">
+            </div>
+            <div class="box2">toi dang noi sml tren nuoc day ne, vao cuu toi cai di toi dang noi sml tren nuoc day ne, vao cuu toi cai di toi dang noi sml tren nuoc day ne, vao cuu toi cai di</div>
+            <div class="box2">toi dang noi</div>
+            <div class="box2">toi dang noi</div>
+            <div class="box2">toi dang noi</div>
+            <div class="box2">toi dang noi</div>
+            <div class="box2">toi dang noi</div>
+            <div class="box2">toi dang noi</div>
+            <div class="box2">toi dang noi</div>
+            <div class="box2">toi dang noi</div>
+            <div class="after-box2">
+                <p>hoohoo</p>
+            </div>
+            <div class="three-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae </div>
+            <div class="vertical-container">
+                <div>
+                    <p>OK chưa</p>
+                </div>
+            </div>
+    </body>
+</html>
+
+<!--
+    1.
+    - HTML: ko phải là ngôn ngữ lập trình mà là ngôn ngữ đánh dấu (markup languege)
+    - Cấu trúc của 1 thành phần HTML
+    <p class="editor-note"> // thẻ mở  
+        Đây là một con mèo // nội dung
+    </p> // thẻ đóng
+    - Element: bao gồm thẻ mở, thẻ đóng và tất cả nội dung
+    - Element: có thuộc tính attribute
+    - Attribute là thông tin thêm của nội dung mà bạn không muốn nó xuất hiện trong phần nội dung.
+    - class: là tên thuộc tính -- editor-note: là giá trị của nó
+    2.
+    - Các thành phần lồng nhau (nesting)
+    3. 
+    - Phần tử rỗng: một số thành phần không có nội dung và thường được gọi là phần tử rỗng.
+    - img không có thẻ đóng, không chứa nội dung, sinh ra để nhúng hình ảnh vào trong trang HTML
+    4.
+    - Kết cấu của 1 trang HTML
+    <!DOCTYPE html> khai báo phiên bản
+    <html> phần tử gốc, bao bọc tất cả nội dung trên trang
+    <head> nội dung bạn muốn đưa vào trang, không phải nội dung hiện thị cho người xem trang.
+        - keyword, mô tả mà muốn xuất hiện trong kết quả tìm kiếm
+        - css, js, thư viện và nhiều thứ khác
+    <meta charset="utf-8"> sử dụng kí tự ở định dạng utf-8
+    <title> tiêu đề mô tả trang, là tiêu đề khi đanh dấu yêu thích trang trên trình duyệt
+    <body> chứa tất cả nội dung mà bạn muốn hiện thị cho người dùng xem: văn bản, hình ảnh, video, trò chơi, âm thanh....
+    5. 
+    - Hình ảnh (image)
+    <img src="" alt="abc">
+    - nhúng hình ảnh vào vị trí xuất hiện. Thông qua src (source) chứa đường dẫn đến tệp hình ảnh
+    - alt // văn bản mô tả cho người không thể xem hình ảnh
+    6.
+    - Đánh dấu văn bản (h1-h6)
+    7. Đoạn văn
+    - thẻ p
+    8. 
+    - Danh sách (ul, ol)
+    - ul: danh sách không có thứ tự hay dùng làm menu
+    - li: danh sách có thứ tự
+    9.
+    - Liên kết (thẻ a: anchor)
+    - <a href="http://abc.com">
+        - http là giao thức
+        - href: hypertext reference
+-->
+<!-- learn css layout: http://learnlayout.com/
+    - display: 
+        - block: thường là block với phần tử block (div, p, header, footer, section...)
+        - inline: thường là inline với phần tử inline (span, a ...)
+        - none: thường dùng với script
+            display: none // hiện thị trang như phần tử không tồn tại
+            visibility: hidden // sẽ ẩn phần tử nhưng phần tử vẫn chiếm không gian hiện thị đầy đủ
+    - margin: auto;
+        - width :đặt giá trị cho width để tránh tình trạng phần tử bị tràn ra ngoài (bên trái hoặc phải)
+        - margin: 0 auto -- để căn giữa
+        - có 1 lỗi xảy ra ở đây khi chiều rộng của phần tử dài hơn trình duyệt window thì nó sẽ tạo ra một thanh trượt ngang để cải thiện nó
+    - max-width:
+        - sử dụng max-width thay cho width để cải thiện việc xử lý cho cửa sổ nhỏ của trình duyệt
+    - the box-model
+        - width được đặt bị thay đổi so với width mong muốn
+        - vì nó được cộng thêm margin, padding, border
+        - margin lấy giá trị to nhất để làm giá trị (vd: .class1 { margin-bottom: 10px; }, .class2 { margin-top: 20px; } sẽ lấy giá trị 20px)
+    - box-sizing
+        - để tránh bị cộng dồn vào width, ta dùng box-sizing: border-box;
+    - position: dùng làm layout phức tạp hơn
+        - static: là position mặc định, không được dùng để định vị cho bất kì thuộc tính position khác
+        - relative: giống static nhưng có thêm thuộc tính: top, left, bottom, right
+        - fixed: luôn ở cùng 1 vị trí khi được cuộn, nó sẽ đè lên trên các phần khác và không chừa khoảng cách.
+            - position: fixed; mà không có thuộc tính top, left, bottom, right thì sẽ không xuất hiện. Mặc định sẽ nằm đè lên các phần khác.
+        - absolute: hành xử giống fixed, liên quan đến định vị tổ tiên gần nhất
+            - khi cho position: absolute
+            top = 0 sẽ nằm góc trên
+            bottom = 0 sẽ nằm ở dưới
+            left = 0 sẽ nằm bên trái
+            right = 0 sẽ nằm bên phải
+    - float: left/right
+        - dùng để bao bọc văn bản xung quanh hình ảnh (giống cái phao nổi giữa mặt nước xung quanh)
+        - img {
+            float: right;
+        }
+    - clear: left/right/both
+        - dùng để kiểm soát hành vi của float
+        - xóa phần tử nổi
+        - khi thằng .box ở trên float: left thì nó sẽ đè lên background và đây text qua bên cạnh
+        - dùng clear: left sẽ đẩy .after-box xuông dưới .box và text sẽ ở trên background.
+    - clearfix: dùng khi hình ảnh bị tràn ra ngoài thùng chứa của nó
+        - overflow: auto;
+    - percent width: % là đơn vị đo liên quan đến khối chứa.
+    - media queries: giúp trang web hiện thị linh hoạt hơn trên thiết bị khác với thiết lập
+        - @media screen and (min-width: 600px): tức là màn hình lớn hơn 600px thì sẽ dùng
+        - @media screen and (max-width: 599px): tức là khi màn hình nhỏ hơn 599 thì sẽ dùng
+
+    - inline-block: giống inline nhưng chúng có chiều rộng và chiều cao
+        - .box2 {
+            float: left;
+            width: 200px;
+            height: 100px;
+            margin: 1em;
+        }
+        - .box2 {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            margin: 1em;
+        }
+    - column-count: dễ dạng làm cho văn bản nhiều cột.
+        - .three-column {
+            - column-count: 3;
+        }
+    - flexbox
+        display: flex; // ở cha
+        flex: 1 // ở con
+        - flex là viết tắt của flex-grow, flex-shrink, flex-basis
+        - flex-grow (number): dùng để quy định độ lớn của 1 item sẽ lớn như thế nào so với item còn lại
+        - flex-shrink (number): sẽ quyết định 1 item sẽ bị co lại như thế nào so với item còn lại
+        - flex-basis (đơn vị độ dài): để quy định độ dài ban đầu của một item
+        flex: 1; -> flex-grow
+        flex: 200px; flex-basis
+        flex: 1 200px; flex-grow và flex-basis
+        flex: 1 2; flex-grow và flex-shrink
+        flex: 1 2 300px; flex-grow, flex-shrink, flex-basis
+
+
+
+
+
+
+
+
+
+-->

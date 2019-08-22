@@ -1,0 +1,176 @@
+
+p {
+    color: red;
+    /* width: 500px; */
+    border: 1px solid black;
+}
+p, li, h1 {
+    color: blue;
+}
+li {
+    border: 1px solid black;
+}
+#main {
+    /* width: 800px; */
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+.displayBlock {
+    background-color: red;
+}
+.displayInline {
+    color: white;
+    background-color: blue;
+}
+.simple {
+    width: 500px;
+    margin: 20px auto;
+    background-color: black;
+    box-sizing: border-box;
+}
+.fancy {
+    width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+    border-width: 10px;
+    border-style: solid;
+    background-color: brown;
+    box-sizing: border-box;
+}
+.static {
+    position: static;
+}
+.absolute {
+    position: absolute;
+    top: 20px;
+    left: 500px;
+}
+.relative1 {
+    position: relative;
+}
+.relative2 {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    bottom: 500px;
+    background-color: brown;
+    width: 500px;
+}
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: yellow;
+  
+    height: 100px;
+}
+.relative3 {
+    position: relative;
+    bottom: 0px;
+    background-color: aquamarine;
+}
+#main2 {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+.absolute2 {
+    position: absolute;
+    right: 250px;
+    bottom: 0;
+    background: red;
+}
+.relative4 {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: pink;
+}
+.absolute3 {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 700px;
+    height: 200px;
+    background-color: yellow;
+}
+.float {
+    width: 500px;
+}
+.float img {
+    float: right;
+}
+.box {
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+    background-color: darkcyan;
+}
+.after-box {
+    clear: left;
+    width: 200px;
+    height: 50px;
+    background-color: coral;
+}
+.clearfix {
+    width: 400px;
+    height: 300px;
+    background-color: gray;
+    overflow: hidden;
+}
+.clearfix img {
+    float: right;
+    width: 50%;
+}
+/* .box2 {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    background: red;
+}
+.after-box2 {
+    clear: left;
+} */
+
+
+.box2 {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    background: red;
+    overflow: auto;
+}
+.three-column {
+    column-count: 3;
+    background: blue;
+    padding: 1em;
+    column-gap: 1em;
+}
+.vertical-container {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: yellowgreen;
+    align-items: center;
+}
+
+
+
+/*
+- CSS: là mã dùng để tạo kiểu cho trang web của mình
+- Giống HTML, CSS không thật sự là ngôn ngữ lập trình
+
+1.
+- Cơ cấu bộ quy tắc CSS
+- Bộ chọn (selector)
+p { // selector // bộ chọn
+    color: red; // declaration // tuyên bố
+} // color: properties // thuộc tính // red: value // giá trị
+
+
+
+*/
